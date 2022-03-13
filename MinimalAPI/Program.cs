@@ -33,6 +33,12 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapPost("/login", (string name) =>
+{
+    return $"Welcome {name} :)";
+})
+.WithName("Login");
+
 app.Run();
 
 internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
