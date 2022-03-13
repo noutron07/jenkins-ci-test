@@ -35,7 +35,7 @@ app.MapGet("/weatherforecast", () =>
 
 app.MapPost("/login", (string name) =>
 {
-    return $"Welcome {name} ::)";
+    return $"Welcome {name} :)";
 })
 .WithName("Login");
 
