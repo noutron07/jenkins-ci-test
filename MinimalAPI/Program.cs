@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.WebHost.UseUrls("http://*:54321");
+builder.WebHost.UseUrls("http://*:1000");
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
